@@ -17,7 +17,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 
 gem 'active_model_serializers', '~> 0.10.4'
-gem 'responders', '~> 2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
