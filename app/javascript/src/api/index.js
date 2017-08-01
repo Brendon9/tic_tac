@@ -3,8 +3,7 @@ import normalize from 'json-api-normalizer'
 
 import { API_DATA_REQUEST, API_DATA_SUCCESS, API_DATA_FAILURE } from '../state/action-types'
 
-// const API_ROOT = 'https://r3pi-ttt.herokuapp.com/api'
-const API_ROOT = 'http://127.0.0.1:5000/api'
+const API_ROOT = 'https://r3pi-ttt.herokuapp.com/api'
 
 // -- Options
 export const getCropOptions = () =>
