@@ -1,3 +1,7 @@
+export const API_DATA_REQUEST = 'API_DATA_REQUEST'
+export const API_DATA_SUCCESS = 'API_DATA_SUCCESS'
+export const API_DATA_FAILURE = 'API_DATA_FAILURE'
+
 export const BOARD_LOAD = 'BOARD_LOAD'
-export const TILE_SELECT = 'TILE_SELECT'
 export const GAME_OVER = 'GAME_OVER'
+export const TILE_SELECT = 'TILE_SELECT'

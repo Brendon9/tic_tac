@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  winner: MyString
+  mode: MyString
+  scoring_index: 1
+
+two:
+  winner: MyString
+  mode: MyString
+  scoring_index: 1

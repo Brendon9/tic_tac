@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  namespace :api do
+    resources :games, only: [:index, :create]
+  end
+
   # catch all for react
   get '*path', to: 'pages#index'
 
