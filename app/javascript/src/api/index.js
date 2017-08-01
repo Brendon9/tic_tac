@@ -5,15 +5,6 @@ import { API_DATA_REQUEST, API_DATA_SUCCESS, API_DATA_FAILURE } from '../state/a
 
 const API_ROOT = 'https://r3pi-ttt.herokuapp.com/api'
 
-// -- Options
-export const getCropOptions = () =>
-  fetch(`${API_ROOT}/crops/`, {
-    credentials: 'same-origin'
-  })
-  .then(_checkStatus)
-  .then(response => response.json())
-
-
 function callApi(endpoint, options = {}) {
   const fullUrl = (endpoint.indexOf(API_ROOT) === -1) ? API_ROOT + endpoint : endpoint
 
