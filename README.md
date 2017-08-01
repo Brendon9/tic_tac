@@ -1,6 +1,6 @@
-# DirectHarvest - Marketplace
+# R3PI Tic Tac Toe
 
-This is the main application for DirectHarvest - marketplace.
+View the application live at https://r3pi-ttt.herokuapp.com
 
 ## Built with
 
