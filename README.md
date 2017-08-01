@@ -1,24 +1,58 @@
-# README
+# DirectHarvest - Marketplace
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the main application for DirectHarvest - marketplace.
 
-Things you may want to cover:
+## Built with
 
-* Ruby version
+That app includes the next components:
 
-* System dependencies
+- [Ruby on Rails](https://github.com/rails/rails/commits/master) 5.1.2 API
+- React/Redux View Layer
+- PostgreSQL database
+- ENV variables configuration ([Dotenv](https://github.com/bkeepers/dotenv))
+- [Puma](http://puma.io/) as a web server
 
-* Configuration
+Check the Gemfile for other packages
 
-* Database creation
+## How to use
 
-* Database initialization
+#### Installation
 
-* How to run the test suite
+These instructions assume you have already completed setting up your local development environment with rvm.
+There is a rvm `.ruby-gemset` in the repo root that will create a gemset named marketplace.
 
-* Services (job queues, cache servers, search engines, etc.)
+Clone the repo
+`git clone git@github.com:Brendon9/tic_tac.git`
 
-* Deployment instructions
+Create the database, run migrations
+```ruby
+bin/setup
+```
 
-* ...
+If running again or on the remote server where the database already exists
+
+```ruby
+rails db:migrate
+```
+
+Start the server
+
+```
+bin/server
+```
+
+## Feature Matrix
+
+#### Tic Tac Toe Baseline
+
+- [x] single player mode,
+- [x] multi player mode,
+- [x] AI uses a random pattern to select tiles
+- [x] uses the API to save the winning games
+
+#### Good to Great
+
+- [ ] more API integration
+- [ ] Minimax Algorithm with a difficulty slider for the AI
+- [ ] variable board size to keep the game interesting
+- [ ] more game statistics than just number of winning games
